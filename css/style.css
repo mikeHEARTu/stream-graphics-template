@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+body
+{
+	color:white;
+	background: black;
+	font-family: 'Inter', sans-serif;
+	font-size: 5vw;
+	font-weight: 400;
+	text-align:center;
+	text-transform: uppercase;
+}
+.streamCanvas
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url("../img/jordan-mcgee-moqWSeBjLIc-unsplash.jpg");
+	background-position: center center;
+	background-size: cover;
+
+	animation: fadeIn 1s 0.5s backwards;
+}
+.textContainer
+{
+	width:fit-content;
+	padding: 3vw;
+	display: inline-block;
+	background-color: black;
+
+	animation: fadeIn 1s 1.0s backwards;
+}
+.textTitle
+{
+	font-weight: 900;
+}
+.socialContainer
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size:0.3em;
+}
+.textSocial
+{
+	margin: 0 1vw;
+}
+
+@keyframes fadeIn
+{
+	from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
